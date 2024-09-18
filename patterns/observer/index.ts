@@ -2,7 +2,7 @@ import { ProductCategoryEnum } from "./entities/product/enum/product_enum";
 import { Product } from "./entities/product/product";
 import { User } from "./entities/user/user";
 import { UserObserver } from "./entities/user/user_observer";
-import { Shop } from "./subject";
+import { Shop } from "./entities/shop/shop";
 
 export class ObserverApp {
   private shop = new Shop();
@@ -43,31 +43,3 @@ export class ObserverApp {
     this.shop.setProduct(computerProduct);
   }
 }
-
-// const telecom = new Shop();
-
-// const user1 = new User({ id: 1, name: "John", age: 26 });
-// const user2 = new User({ id: 2, name: "Marie", age: 32 });
-
-// const observer1 = new UserObserver(user1, [
-//   ProductCategoryEnum.PHONE,
-//   ProductCategoryEnum.TV,
-// ]);
-// const observer2 = new UserObserver(user2, [ProductCategoryEnum.COMPUTER]);
-
-// telecom.subscribe(observer1);
-// telecom.subscribe(observer2);
-
-// const phoneProduct = new Product({
-//   id: 1,
-//   name: "Iphone",
-//   category: ProductCategoryEnum.PHONE,
-// });
-// telecom.setProduct(phoneProduct);
-
-// const computerProduct = new Product({
-//   id: 2,
-//   name: "Macbook",
-//   category: ProductCategoryEnum.COMPUTER,
-// });
-// telecom.setProduct(computerProduct);

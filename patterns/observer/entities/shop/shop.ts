@@ -1,6 +1,6 @@
-import { Product } from "./entities/product/product";
-import { Observer } from "./interfaces/observer";
-import { Subject } from "./interfaces/subject";
+import { Product } from "../product/product";
+import { Observer } from "../../interfaces/observer";
+import { Subject } from "../../interfaces/subject";
 
 export class Shop implements Subject {
   private observers: Set<Observer> = new Set();
