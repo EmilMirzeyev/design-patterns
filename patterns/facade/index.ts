@@ -7,6 +7,7 @@ export class FacadeApp {
 
   run() {
     this.makeCoffee();
+    this.coffeeMachine.reFill();
   }
 
   private makeCoffee() {

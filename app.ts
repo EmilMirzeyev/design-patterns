@@ -1,9 +1,11 @@
 import { FacadeApp } from "./patterns/facade/index";
 import { ObserverApp } from "./patterns/observer/index";
 import { SingletonApp } from "./patterns/singleton/index";
+import { StateApp } from "./patterns/state/index";
 
 // const app = new SingletonApp();
 // const app = new ObserverApp();
-const app = new FacadeApp();
+// const app = new FacadeApp();
+const app = new StateApp();
 
 app.run();
