@@ -1,7 +1,7 @@
 import type { IUserDTO } from "../../entities/user/interfaces/i_user_dto";
-import type { IApiData } from "../abstraction/i_api_data";
+import type { BaseApiData } from "../abstraction/base_api_data";
 
-export class ApiData implements IApiData<IUserDTO> {
+export class ApiData implements BaseApiData<IUserDTO> {
   async fetchData(): Promise<IUserDTO | { message: string; status: number }> {
     return new Promise((resolve) => {
       setTimeout(() => {

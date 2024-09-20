@@ -1,4 +1,6 @@
-export class CoffeeMachineService {
+import type { BaseCoffeeMachineService } from "../abstraction/base_coffee_machine_service";
+
+export class CoffeeMachineService implements BaseCoffeeMachineService {
   private power: boolean;
   private waterLevel: number;
   private milkLevel: number;

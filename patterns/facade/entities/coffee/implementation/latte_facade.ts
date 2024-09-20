@@ -1,4 +1,4 @@
-import { CoffeeMachineService } from "../../../service/coffee_machine_service";
+import { CoffeeMachineService } from "../../../service/implementation/coffee_machine_service";
 import { Coffee } from "../abstraction/coffee";
 
 export class LatteFacade implements Coffee {
